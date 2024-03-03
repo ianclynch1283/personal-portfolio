@@ -10,6 +10,7 @@
     transition-duration: 200ms;
 }
 
+
 body {
     background: var(--bg-color);
     color: var(--primary-color);
@@ -36,8 +37,8 @@ p {
 
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: space-between;
+    justify-content: space-between; 
     gap: 14px;
 }
 
@@ -48,7 +49,7 @@ nav {
     gap: 32px;
 }
 
-nav a {
+a {
     cursor: pointer;
     text-decoration: none;
     color: inherit;
@@ -73,16 +74,16 @@ section {
     gap: 8px;
 }
 
-.statsContainer {
+.statsContainer, outreach {
     display: flex;
-    flex-direction: column;
-    align-items: stretch;
+    flex-direction: row;
+    align-items: center;
     gap: 24px;
 }
 
 .imgContainer {
     border-radius: 100%;
-    max-width: 114px;
+    max-width: 200px;
     overflow: hidden;
 }
 
@@ -98,14 +99,14 @@ section {
     gap: 14px;
 }
 
-.stats>div {
+.stats>div, .outreach>a {
     flex: 1;
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.stats div i {
+.stats div i, .outreach a i {
     font-size: 1.4em
 }
 
@@ -117,12 +118,12 @@ section {
 }
 .aboutMe {
     line-height: 1.5em;
-    max-width: 50%;
 }
 
 .outreach {
     display: flex;
-    aligh-items: center;
+    flex-direction: row;
+    align-items: center;
     gap: 14px;
     cursor: pointer;
     margin-right: auto;
@@ -133,7 +134,7 @@ section {
     opacity: 0.7;
 }
 
-.outreach i {
+#contactArrow {
     transform: rotate(-45deg);
 }
 
