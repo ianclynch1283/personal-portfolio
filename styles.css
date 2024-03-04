@@ -161,7 +161,6 @@ section {
 }
 .projectItem div:last-child {
     aspect-ratio: 16/9;
-    max-width: 50%;
     overflow: hidden;
 }
 
